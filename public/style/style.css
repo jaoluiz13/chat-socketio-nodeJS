@@ -17,9 +17,11 @@ ul,li{
     padding: 3px;
     font-size: 15px;
 }
-
+.usersOn{
+    display: flex;
+}
 .chatList li.m-status{
-    color: rgba(85, 84, 84, 0.2);
+    color: rgb(11, 194, 42);
     font-style: italic;
 }
 .chatList li.m-txt span{
