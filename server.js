@@ -4,12 +4,16 @@ const http = require("http");
 const socketIO = require("socket.io");
 const { Socket } = require("dgram");
 const { time } = require("console");
+import dotenv from 'dotenv';
+
+
+dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-server.listen(3000);
+server.listen(process.env.PORT);
 app.use(express.static(path.join(__dirname, "public")));
 
 let connectedUSers = [];

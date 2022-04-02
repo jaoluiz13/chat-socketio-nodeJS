@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('https://personalchatnodejs.herokuapp.com/');
 
 let userName = "";
 let userList = [];
