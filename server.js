@@ -4,6 +4,7 @@ const http = require("http");
 const socketIO = require("socket.io");
 const { Socket } = require("dgram");
 const { time } = require("console");
+const cors = require('cors');
 
 const app = express();
 const server = http.createServer(app);
@@ -11,7 +12,7 @@ const io = socketIO(server);
 
 server.listen(3000);
 app.use(express.static(path.join(__dirname, "public")));
-
+app.use(cors());
 let connectedUSers = [];
 
 io.on("connection", (socket) => {
