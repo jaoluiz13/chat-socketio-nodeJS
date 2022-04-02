@@ -5,7 +5,7 @@ const socketIO = require("socket.io");
 const { Socket } = require("dgram");
 const { time } = require("console");
 import dotenv from 'dotenv';
-import router from 'express';
+
 
 dotenv.config();
 
@@ -13,9 +13,6 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-const router = router();
-
-router.get('/',io);
 
 server.listen(process.env.PORT);
 app.use(express.static(path.join(__dirname, "public")));
