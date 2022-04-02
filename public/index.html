@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="page" id="login">
+        <h1>Bem vindo, por favor digite seu nome :</h1>
+        <input type="text" id="loginInput">
+    </div>
+    <div class="page" id="chat">
+        <div class="chatArea">
+            <ul class="chatList">
+                <li class="m-status"></li>
+                <li class="m-status"></li>
+                <li class="m-txt"><span class="me"></span></li>
+                <li class="m-txt"><span></span></li>
+            </ul>
+            <ul class="userList">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="chatInput">
+            <input type="text" id="chatTextInput" placeholder="Digite a mensagem e aperte enter">
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
