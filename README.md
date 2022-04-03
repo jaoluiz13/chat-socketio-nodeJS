@@ -1,2 +1,4 @@
-# chat-socketio-nodeJS
-deploy : <a href="https://personalnodechat.herokuapp.com">heroku</a>
+# Chat Simples utilizando NodeJs Express e a biblioteca scoketIo
+
+
+Um simples chat desenvolvivo durante as aulas de nodejs da b7web
